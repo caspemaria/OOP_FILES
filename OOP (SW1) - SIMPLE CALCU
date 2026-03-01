@@ -1,0 +1,31 @@
+num1 = input("Enter First Number: ")   #num1 is  variable that has a value of (first#)
+num2 = input("Enter Second number: ")  #num1 is  variable that has a value of (first#)
+
+print("select operation")
+print("1.Multiplication")
+print("2.Division")
+print("3.Addition")
+print("4.Subtraction")
+
+#this part takes input from the user
+choice = input("enter a choice 1-4 only: ")
+
+#true, if choice is among the 1-4
+if choice == '1':
+    print("result: ", float(num1)* float(num2))
+elif choice == '2': 
+    print("result: ", float(num1) / float(num2))
+elif choice == '3':
+    print("result: ", float(num1) + float(num2))
+elif choice == '4':
+    print("result: ", float(num1) - float(num2))
+else: 
+    print("invalid input")
+
+
+#note:
+#print(num1 + num2)   # "53" (string concatenation)
+#print(float(num1) + float(num2))  # 8.0 (numeric addition)
+#state to convert string to numbers before performing math operations. 
+# Otherwise, it will treat the inputs as strings and concatenate them in operations
+#important note: - Don’t put quotes around variables or numeric expressions, because that turns them into strings or causes syntax errors.
